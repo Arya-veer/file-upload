@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+
+<html lang="en-us" >
+<head>
+<title>Add users | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/admin/css/nav_sidebar.css">
+  <script src="/static/admin/js/nav_sidebar.js" defer></script>
+
+<link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css">
+
+
+<script src="/admin/jsi18n/"></script>
+<script src="/static/admin/js/vendor/jquery/jquery.js"></script>
+<script src="/static/admin/js/calendar.js"></script>
+<script src="/static/admin/js/jquery.init.js"></script>
+<script src="/static/admin/js/admin/DateTimeShortcuts.js"></script>
+<script src="/static/admin/js/core.js"></script>
+<script src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script src="/static/admin/js/actions.js"></script>
+<script src="/static/admin/js/urlify.js"></script>
+<script src="/static/admin/js/prepopulate.js"></script>
+<script src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css">
+    
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class=" app-knowbitsians model-users change-form"
+  data-admin-utc-offset="19800">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="/admin/">Django administration</a></h1>
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>bitsians_united</strong>.
+            
+            
+                
+                    <a href="/">View site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="/admin/password_change/">Change password</a> /
+                
+                <a href="/admin/logout/">Log out</a>
+            
+        </div>
+        
+        
+        
+    </div>
+    <!-- END Header -->
+    
+<div class="breadcrumbs">
+<a href="/admin/">Home</a>
+&rsaquo; <a href="/admin/knowbitsians/">Knowbitsians</a>
+&rsaquo; <a href="/admin/knowbitsians/users/">Userss</a>
+&rsaquo; Add users
+</div>
+
+    
+
+    <div class="main shifted" id="main">
+      
+        
+          
+<button class="sticky toggle-nav-sidebar" id="toggle-nav-sidebar" aria-label="Toggle navigation"></button>
+<nav class="sticky" id="nav-sidebar">
+  
+
+
+  
+    <div class="app-auth module">
+      <table>
+        <caption>
+          <a href="/admin/auth/" class="section" title="Models in the Authentication and Authorization application">Authentication and Authorization</a>
+        </caption>
+        
+          <tr class="model-group">
+            
+              <th scope="row"><a href="/admin/auth/group/">Groups</a></th>
+            
+
+            
+              <td><a href="/admin/auth/group/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+          <tr class="model-user">
+            
+              <th scope="row"><a href="/admin/auth/user/">Users</a></th>
+            
+
+            
+              <td><a href="/admin/auth/user/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+    <div class="app-knowbitsians module current-app">
+      <table>
+        <caption>
+          <a href="/admin/knowbitsians/" class="section" title="Models in the Knowbitsians application">Knowbitsians</a>
+        </caption>
+        
+          <tr class="model-users current-model">
+            
+              <th scope="row"><a href="/admin/knowbitsians/users/" aria-current="page">Userss</a></th>
+            
+
+            
+              <td><a href="/admin/knowbitsians/users/add/" class="addlink">Add</a></td>
+            
+
+            
+          </tr>
+        
+      </table>
+    </div>
+  
+
+
+</nav>
+
+        
+      
+      <div class="content">
+        
+          
+        
+        <!-- Content -->
+        <div id="content" class="colM">
+          
+          <h1>Add users</h1>
+          <div id="content-main">
+
+
+
+<form method="post" id="users_form" novalidate><input type="hidden" name="csrfmiddlewaretoken" value="T9gVMiNXwW9Q9Xgl94wEBdtILn2TyIO4pEOjO9C5ZEz5GVbUbWpJN2JSYhCaeMDw">
+<div>
+
+
+
+
+
+
+
+  <fieldset class="module aligned ">
+    
+    
+    
+        <div class="form-row field-username">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_username">Username:</label>
+                        
+                            <input type="text" name="username" class="vTextField" maxlength="50" required id="id_username">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-bits_id">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_bits_id">Bits id:</label>
+                        
+                            <input type="text" name="bits_id" class="vTextField" maxlength="13" required id="id_bits_id">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-DOB">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_DOB">DOB:</label>
+                        
+                            <input type="text" name="DOB" class="vDateField" size="10" required id="id_DOB">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-Gender">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_Gender">Gender:</label>
+                        
+                            <input type="number" name="Gender" class="vIntegerField" required id="id_Gender">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-CurrentYearofStudy">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_CurrentYearofStudy">CurrentYearofStudy:</label>
+                        
+                            <input type="number" name="CurrentYearofStudy" class="vIntegerField" required id="id_CurrentYearofStudy">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-Bio">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_Bio">Bio:</label>
+                        
+                            <textarea name="Bio" cols="40" rows="10" class="vLargeTextField" required id="id_Bio">
+</textarea>
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-Intrests">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_Intrests">Intrests:</label>
+                        
+                            <textarea name="Intrests" cols="40" rows="10" class="vLargeTextField" required id="id_Intrests">
+</textarea>
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-password">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_password">Password:</label>
+                        
+                            <textarea name="password" cols="40" rows="10" class="vLargeTextField" required id="id_password">
+</textarea>
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+
+<input type="submit" value="Save" class="default" name="_save">
+
+
+<input type="submit" value="Save and add another" name="_addanother">
+<input type="submit" value="Save and continue editing" name="_continue">
+
+
+</div>
+
+
+
+    <script id="django-admin-form-add-constants"
+            src="/static/admin/js/change_form.js"
+            
+                data-model-name="users"
+            
+            async>
+    </script>
+
+
+
+
+<script id="django-admin-prepopulated-fields-constants"
+        src="/static/admin/js/prepopulate_init.js"
+        data-prepopulated-fields="[]">
+</script>
+
+
+</div>
+</form></div>
+
+          
+          <br class="clear">
+        </div>
+        <!-- END Content -->
+        <div id="footer"></div>
+      </div>
+    </div>
+</div>
+<!-- END Container -->
+</body>
+</html>

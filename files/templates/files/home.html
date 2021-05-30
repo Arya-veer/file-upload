@@ -1,0 +1,25 @@
+{% extends 'files/base.html' %}
+
+{% block content %}
+
+
+        <div class="row">
+        <div class="col-sm-6 ">
+            {%  for file in files %}
+        <div class="card" style="width: 40rem; color: rgb(66, 191, 245); background: beige;">
+    <a href="/media/{{ file.document }}" target="_blank" style="color:red;">{{ file.document }}</a>
+        <br>
+        <p>description: {{ file.description }}</p>
+        <br>
+        <h6>Uploaded at {{ file.uploaded_at }}</h6>
+        <br>
+        <a href="/media/{{ file.document }}" download><input class="btn btn-outline-primary" type="button" value="download"></a>
+        </div>
+                <br>
+            {% endfor %}
+        </div>
+        </div>
+
+
+
+{% endblock %}
